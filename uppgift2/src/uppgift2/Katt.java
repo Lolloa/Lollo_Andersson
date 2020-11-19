@@ -24,5 +24,9 @@ public class Katt {
 	public String getBreed() {
 		return breed;
 	}
+	
+	public void showInfo() {
+		System.out.println("Katten heter " + name + " och är en " + breed);
+	}
 
 }

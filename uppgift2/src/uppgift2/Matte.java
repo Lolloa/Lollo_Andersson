@@ -1,15 +1,19 @@
 package uppgift2;
 
 public class Matte{
-	String humanName;
-	Katt cat;
+	private String humanName;
+	private Katt cat;
 	
 	public Matte(String newHumanName, Katt cat) {
-		humanName = newHumanName;
-		
-		
+		this.humanName = newHumanName;
+		this.cat = cat;
 		
 	}
+	
+	public void showInfo() {
+		System.out.println("Mattes namn är " + humanName + " och katten heter " + cat.getName());
+	}
+	
 	public void setName(String newHumanName) {
 		newHumanName = humanName;
 	}
