@@ -1,4 +1,4 @@
-package uppgift2;
+package uppgift2_paket;
 
 public class Hund {
 	private String name;

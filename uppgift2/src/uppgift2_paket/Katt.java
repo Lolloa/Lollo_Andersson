@@ -1,12 +1,15 @@
-package uppgift2;
+package uppgift2_paket;
 
 public class Katt {
 	private String name;
 	private String breed;
+	Matte matte;
 	
-	Katt(String newName, String newBreed){
+	Katt(String newName, String newBreed, Matte matte){
 		this.name = newName;
 		this.breed = newBreed;
+		this.matte = matte;
+		
 	}
 	
 	public void setName(String newName) {
@@ -26,7 +29,11 @@ public class Katt {
 	}
 	
 	public void showInfo() {
-		System.out.println("Katten heter " + name + " och är en " + breed);
+		System.out.println("\nKatten heter " + name + " och är en " + breed);
+	}
+	
+	public void getMatte() {
+		System.out.println(matte + " är min matte");
 	}
 
 }

@@ -1,4 +1,4 @@
-package uppgift2;
+package uppgift2_paket;
 
 public class Matte{
 	private String humanName;
@@ -11,7 +11,7 @@ public class Matte{
 	}
 	
 	public void showInfo() {
-		System.out.println("Mattes namn är " + humanName + " och katten heter " + cat.getName());
+		System.out.println("\nMattes namn är " + humanName + " och katten heter " + cat.getName());
 	}
 	
 	public void setName(String newHumanName) {
