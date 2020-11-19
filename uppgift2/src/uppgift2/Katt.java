@@ -17,12 +17,12 @@ public class Katt {
 		newBreed = breed;
 	}
 	
-	public String getName(String newName) {
-		return newName;
+	public String getName() {
+		return name;
 	}
 	
-	public String getBreed(String newBreed) {
-		return newBreed;
+	public String getBreed() {
+		return breed;
 	}
 
 }
