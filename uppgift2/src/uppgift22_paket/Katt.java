@@ -1,10 +1,10 @@
-package uppgift21_paket;
+package uppgift22_paket;
 
 public class Katt {
 	private String name;
 	private String breed;
 	
-	Katt(String newName, String newBreed){ 
+	Katt(String newName, String newBreed){
 		this.name = newName;
 		this.breed = newBreed;
 	}
@@ -24,5 +24,7 @@ public class Katt {
 	public String getBreed() {
 		return breed;
 	}
+	
+	
 
 }
