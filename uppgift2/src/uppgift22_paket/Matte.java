@@ -1,8 +1,8 @@
 package uppgift22_paket;
 
 public class Matte {
-	String name;
-	Katt cat;
+	private String name;
+	private Katt cat;
 	
 	Matte(String newName, Katt cat){
 		this.name = newName;
