@@ -19,6 +19,7 @@ public class Matte {
 	
 	public void showInfo() {
 		System.out.println("Mattes namn är " + name + ", hennes katt heter " + cat.getName() + " och är av rasen " + cat.getBreed());
+		System.out.println(cat.getName() + " säger " + cat.getSound());
 	}
 
 }
