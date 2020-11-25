@@ -10,11 +10,11 @@ public class Hund {
 	}
 	
 	public void setName(String newName) {
-		newName = name;
+		name = newName;
 	}
 	
 	public void setBreed(String newBreed) {
-		newBreed = breed;
+		breed = newBreed;
 	}
 	
 	public String getName() {
