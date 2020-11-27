@@ -5,10 +5,9 @@ public class Main {
 	public static void main(String[] args) {
 		Katt cat = new Katt("Bosse", "huskatt");
 		Matte matte = new Matte("Lollo", cat);
-		
+
 		cat.setSound("Mjauuuu");
-		
-		System.out.println(matte.getCat());
+
 		matte.showInfo();
 
 	}
