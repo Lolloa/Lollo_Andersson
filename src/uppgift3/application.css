@@ -1,1 +1,6 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-image: url("https://st.depositphotos.com/1954507/2120/v/600/depositphotos_21206817-stock-illustration-lights-and-hearts-on-pink.jpg");
+	-fx-background-size: cover;
+	-fx-focus-color: transparent;
+}

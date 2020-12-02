@@ -22,6 +22,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -31,6 +32,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
 public class Main extends Application {
+	
 
 	int milliSec = 0;
 	int sec = 0;
@@ -77,18 +79,27 @@ public class Main extends Application {
 		stopButton = new Button("Reset");
 		clearButton = new Button("Clear history");
 		
-		startButton.setPrefSize(55, 50);
-		stopButton.setPrefSize(55, 50);
-		clearButton.setPrefHeight(150);
+		startButton.setPrefSize(55, 20);
+		stopButton.setPrefSize(55, 20);
+		clearButton.setPrefSize(85, 30);
+		
+		startButton.setStyle("-fx-border-color: #e699b3; ");
+		stopButton.setStyle("-fx-border-color: #e699b3; ");
+		clearButton.setStyle("-fx-border-color: #e699b3; ");
+		
+		
 
 		startButton.setOnAction(e -> startTimer());
 		stopButton.setOnAction(e -> stopTimer());
 		clearButton.setOnAction(e -> clearTime());
 
-		table = new TableView();
+		table = new TableView<>();
 
 		TableColumn<DateTime, String> dateTime = new TableColumn<>("Date Time");
 		TableColumn<DateTime, String> time = new TableColumn<>("Time");
+		
+		dateTime.setStyle("-fx-border-color: #e699b3; ");
+		time.setStyle("-fx-border-color: #e699b3; ");
 
 		dateTime.setCellValueFactory(new PropertyValueFactory<>("date"));
 		time.setCellValueFactory(new PropertyValueFactory<>("time"));
@@ -99,9 +110,6 @@ public class Main extends Application {
 
 		dateTime.setPrefWidth(150);
 		time.setPrefWidth(150);
-		
-		Color color1  = Color.hsb(1.0, 0.5, 0.8, 0.5);
-		Background background = new Background(new BackgroundFill(color1, null, null));
 		
 		HBox hBox = new HBox(10);
 		hBox.getChildren().addAll(startButton, stopButton);
@@ -120,11 +128,10 @@ public class Main extends Application {
 		gridPane.setConstraints(clearButton, 1, 4);
 		
 		gridPane.getChildren().addAll(table, clearButton, hBox);
-		gridPane.setBackground(background);
 
-		Scene scene = new Scene(gridPane, 350, 420);
+		Scene scene = new Scene(gridPane, 350, 500);
 
-		//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 		primaryStage.setScene(scene);
 		primaryStage.show();
