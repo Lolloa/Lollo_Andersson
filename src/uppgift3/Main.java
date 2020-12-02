@@ -120,11 +120,8 @@ public class Main extends Application {
 		gridPane.setVgap(10);
 		gridPane.setPadding(new Insets(10, 10, 10, 10));
 		gridPane.setConstraints(hBox, 2, 2);
-		//gridPane.setConstraints(startButton, 2, 2);
-		//gridPane.setConstraints(stopButton, 3, 2);
 		gridPane.setConstraints(table, 1, 3);
 		GridPane.setColumnSpan(table, 2);
-		//gridPane.setGridLinesVisible(true);
 		gridPane.setConstraints(clearButton, 1, 4);
 		
 		gridPane.getChildren().addAll(table, clearButton, hBox);
