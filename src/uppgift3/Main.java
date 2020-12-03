@@ -124,6 +124,7 @@ public class Main extends Application {
 		GridPane.setColumnSpan(table, 2);
 		gridPane.setConstraints(clearButton, 1, 4);
 		
+		
 		gridPane.getChildren().addAll(table, clearButton, hBox);
 
 		Scene scene = new Scene(gridPane, 350, 500);
