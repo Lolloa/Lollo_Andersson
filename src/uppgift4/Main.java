@@ -108,7 +108,7 @@ public class Main extends Application{
 		window.show();
 		
 	}
-
+//Gets error if whole  list is deleted
 	private void deleteHuman() {
 		ObservableList<Info> humanSelected;
 		ObservableList<Info> allInfoHumanSelected;
