@@ -67,9 +67,11 @@ public class Main extends Application{
 		
 		Button addButton = new Button("Add");
 		Button deleteButton = new Button("Delete");
+		Button updateButton = new Button("Update");
 		
 		addButton.setOnAction(e -> addHuman(firstNameText, lastNameText, ageText));
 		deleteButton.setOnAction(e -> deleteHuman());
+		updateButton.setOnAction(e -> updateHuman(firstNameText, lastNameText, ageText));
 		
 		window = primaryStage;
 		window.setTitle("Uppgift 4");
@@ -80,7 +82,7 @@ public class Main extends Application{
 		
 		HBox buttonHbox = new HBox(20);
 		buttonHbox.setPadding(new Insets(10, 10, 10, 10));
-		buttonHbox.getChildren().addAll(addButton, deleteButton);
+		buttonHbox.getChildren().addAll(addButton, deleteButton, updateButton);
 		buttonHbox.setLayoutY(510);
 		
 		tableView = new TableView<>();
@@ -108,6 +110,12 @@ public class Main extends Application{
 		window.show();
 		
 	}
+private void updateHuman(TextField firstNameText, TextField lastNameText, TextField ageText) {
+
+	
+	
+	}
+
 //Gets error if whole  list is deleted
 	private void deleteHuman() {
 		ObservableList<Info> humanSelected;
