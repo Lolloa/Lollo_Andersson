@@ -18,38 +18,35 @@ public class PlayerSAndD {
 	private XMLEncoder encoder;
 	private XMLDecoder decoder;
 	private static final String FILE_NAME = "Players.xml";
-	
-	public PlayerSAndD (){
-		
+
+	public PlayerSAndD() {
+
 	}
-	
-	public void encodePlayers (List <Players> player) {
+
+	public void encodePlayers(List<Players> player) {
 		try {
 			encoder = new XMLEncoder(new BufferedOutputStream(new FileOutputStream(FILE_NAME)));
 			System.out.println("File stream opened and XMLEncoder created");
-				encoder.writeObject(player);
-			
-			
-			
-			
-		}catch(Exception e) {
+			encoder.writeObject(player);
+
+		} catch (Exception e) {
 			System.out.println("Error: while creating or opening the file");
 		}
-		System.out.println("Klar");
+		System.out.println("Finished");
 		encoder.close();
 	}
-	
+
 	public ObservableList<Players> decodePlayers() {
 		try {
 			decoder = new XMLDecoder(new BufferedInputStream(new FileInputStream(FILE_NAME)));
-			List <Players> player =(List<Players>)decoder.readObject();
-			
+			List<Players> player = (List<Players>) decoder.readObject();
+
 			System.out.println("File stream opened and XMLDecoder created");
 			decoder.close();
 			System.out.println("Decoded");
 			return FXCollections.observableArrayList(player);
-			
-		}catch(Exception e) {
+
+		} catch (Exception e) {
 			System.out.println("Error: while decoding or opening the file");
 			return null;
 		}
