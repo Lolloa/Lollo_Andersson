@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="14.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="uppgift4.Players">
+    <void property="firstName">
+     <string>Henok</string>
+    </void>
+    <void property="jerseyNumber">
+     <string>36</string>
+    </void>
+    <void property="lastName">
+     <string>Goitom</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="uppgift4.Players">
+    <void property="firstName">
+     <string>Mikael</string>
+    </void>
+    <void property="jerseyNumber">
+     <string>33</string>
+    </void>
+    <void property="lastName">
+     <string>Lustig</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="uppgift4.Players">
+    <void property="firstName">
+     <string>Sebastian</string>
+    </void>
+    <void property="jerseyNumber">
+     <string>7</string>
+    </void>
+    <void property="lastName">
+     <string>Larsson</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="uppgift4.Players">
+    <void property="firstName">
+     <string>Filip</string>
+    </void>
+    <void property="jerseyNumber">
+     <string>22</string>
+    </void>
+    <void property="lastName">
+     <string>Rogic</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="uppgift4.Players">
+    <void property="firstName">
+     <string>Per</string>
+    </void>
+    <void property="jerseyNumber">
+     <string>3</string>
+    </void>
+    <void property="lastName">
+     <string>Karlsson</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
