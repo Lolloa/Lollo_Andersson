@@ -1,0 +1,22 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a72dffdb-6c54-4070-9d54-75775915c2c7/d4ofrwt-ad9ac0f5-46b7-4b4c-b735-7b8ae1a9b8dd.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYTcyZGZmZGItNmM1NC00MDcwLTlkNTQtNzU3NzU5MTVjMmM3XC9kNG9mcnd0LWFkOWFjMGY1LTQ2YjctNGI0Yy1iNzM1LTdiOGFlMWE5YjhkZC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.6-Qs3RjkdVUbcy5bs0fXCaRkVUoBJrNPj9bmJoWKRLo");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+.table-view {
+  -fx-opacity : 0.7;
+}
+
+.table-row-cell {
+	-fx-opacity : 1;
+}
+.table-view .column-header-background{
+	-fx-opacity : 0.9;
+}
+.table-view .filler{
+	-fx-opacity : 0.8;
+}
+.text-field{
+	-fx-opacity : 0.8;
+}
