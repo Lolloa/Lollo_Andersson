@@ -45,7 +45,7 @@ public class Main extends Application {
 		lastNameLabel = new Label("Last name: ");
 		lastNameLabel.setFont(new Font("Calibri", 16));
 		lastNameLabel.setTextFill(Color.web("#f2f2f2"));
-		jerseyNumLabel = new Label("Age :");
+		jerseyNumLabel = new Label("Jersey Number:");
 		jerseyNumLabel.setFont(new Font("Calibri", 16));
 		jerseyNumLabel.setTextFill(Color.web("#f2f2f2"));
 
