@@ -31,7 +31,7 @@ public class Main extends Application {
 	TextField firstNameText, lastNameText, jerseyNumText;
 	TableView<Players> tableView;
 	TableColumn<Players, String> firstName, lastName, jerseyNumber;
-	ObservableList<Players> playerSelected, playerInfo;
+	ObservableList<Players> playerInfo;
 	List<Players> playerList = new ArrayList<Players>();
 	PlayerSAndD encoder, decoder;
 	Players pSelected, players;
@@ -146,7 +146,6 @@ public class Main extends Application {
 	private void update() {
 
 		playerInfo = FXCollections.observableArrayList();
-		playerSelected = FXCollections.observableArrayList();
 		playerInfo = tableView.getItems();
 		pSelected = (Players) tableView.getSelectionModel().getSelectedItem();
 
@@ -161,7 +160,6 @@ public class Main extends Application {
 
 	private void delete() {
 		playerInfo = FXCollections.observableArrayList();
-		playerSelected = FXCollections.observableArrayList();
 		playerInfo = tableView.getItems();
 
 		pSelected = (Players) tableView.getSelectionModel().getSelectedItem();
