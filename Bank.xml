@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="14.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="uppgift5.User">
+    <void property="balance">
+     <int>988</int>
+    </void>
+    <void property="createdDate">
+     <string>2020/12/19 03:46:20</string>
+    </void>
+    <void property="id">
+     <string>1064435</string>
+    </void>
+    <void property="latestTrans">
+     <string>2020/12/19 03:46:29</string>
+    </void>
+    <void property="pass">
+     <string>hejsan</string>
+    </void>
+    <void property="username">
+     <string>hej</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
